@@ -1,0 +1,46 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+html {
+    font-size: 16px;
+    background-color: white;
+}
+
+body {
+    margin: 20px auto;
+    background-color: white;
+    width: 75%;
+    font-family: Helvetica;
+}
+
+.banner {
+    background-color: #5962c6;
+    border: solid 2px #000000;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0.5rem auto;
+}
+
+.banner-description {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 0.5rem auto;
+}
+
+section {
+    margin: 1rem auto;
+}
+
+sub-headings {
+
+}
