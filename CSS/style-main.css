@@ -12,51 +12,51 @@ body {
     color: black;
 }
 
+#navbar {
+    background-color: #c7cfc5;
+    position: fixed;
+    width: 250px;
+    height: calc(100% - 23px);
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.banner {
+    background-color: #c7cfc5;
+    text-align: center;
+    width: calc(100% - 265px);
+    border: solid 2px black;
+    border-radius: 20px;
+    float: right;
+}
+
+.container1 {
+    background-color: #c7cfc5;
+    font-family: Helvetica;
+    width: calc(100% - 265px);
+    border: solid 2px black;
+    border-radius: 20px;
+    margin-top: 10px;
+    float: right;
+}
+
+.container2 {
+    background-color: #c7cfc5;
+    font-family: Helvetica;
+    width: calc(100% - 265px);
+    border: solid 2px black;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+
 img,
 figcaption {
     max-width: 50%;
     border: solid 1px black;
     margin-top: -5px;
 }
-
-.banner {
-    background-color: #c7cfc5;
-    text-align: center;
-    border: solid 2px black;
-    border-radius: 20px;
-    margin-left: 265px;
-}
-
-.container1 {
-    background-color: #c7cfc5;
-    font-family: Helvetica;
-    border: solid 2px black;
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-left: 265px;
-}
-
-.container2 {
-    background-color: #c7cfc5;
-    font-family: Helvetica;
-    border: solid 2px black;
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-left: 265px;
-}
-
-#navbar {
-    background-color: #c7cfc5;
-    position: fixed;
-    min-width: 250px;
-    top: 10px;
-    left: 10px;
-    height: calc(100% - 23px);
-    border: solid 2px black;
-    border-radius: 10px;
-    float: left;
-}
-
 #nav-link {
     font-size: 1.5rem;
     display: block;
@@ -122,14 +122,14 @@ section:last-child {
     /* For mobile phones: */
 
     #navbar {
-        position: absolute;
-        top: 95px;
+        position: static;
         left: unset;
-        width: calc(100% - 20px);
+        width: 100%;
         max-height: 180px;
         z-index: 1;
-        margin:0;
+        margin-top: 10px;
         padding:0;
+        float: right;
     }
 
     #nav-link:last-of-type {
@@ -137,17 +137,14 @@ section:last-child {
     }
 
     .banner {
-        position: relative;
-        margin: 5px 0 0;
+        width: 100%;
     }
 
     .container1 {
-        position: relative;
-        margin: 210px 0 0;
+        width: 100%;
     }
 
     .container2 {
-        position: relative;
-        margin: 10px 0;
+        width: 100%;
     }
 }
