@@ -1,85 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="CSS\style-main.css" />
-    <title>Daniel Drake - Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DD - Home</title>
 </head>
 
 <body>
 
-    <!--Banner Section-->
-
-    <div class="banner">
-        <h1>Daniel Drake</h1>
-        <p class="banner-description">Updated at least once a week. Check back regularly!</p>
-    </div>
-
-    <!--Navigation-->
-    <nav id="navbar" class="panel">
-        <header>D D</header>
-        <a id="nav-link" class="hyperlink" href="index.html">Home</a>
-        <a id="nav-link" class="hyperlink" href="unity.html">Game Development</a>
-        <a id="nav-link" class="hyperlink" href="project1.html">Project One</a>
-        <a id="nav-link" class="hyperlink" href="project2.html">Project Two</a>
+    <!--navigation start-->
+    <nav id="navbar" class="nav-flex-container">
+        <ul class="nav-flex-item">
+            <li>
+                <a href="#welcome-section">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contacts">Contacts</a>
+            </li>
+        </ul>
     </nav>
+    <!--navigation end-->
 
-    <div class="col"></div>
+    <!--about start-->
+    <section id="welcome-section" class="about">
+        <h1>Hi I am Daniel Drake</h1>
+        <p>a web developer</p>
+    </section>
+    <!--about end-->
 
-    <!--Main content-->
-    <main>
-        <div class="container1 panel">
-            <section>
-                <div class="sub-headings">
-                    <h2>About Me</h2>
-                </div>
+    <!--portfolio start-->
+    <div class="project-holder" id="projects">
+        <h2 class="project-heading">These are some of my projects</h2>
+        <section class="project-grid-container">
 
-                <p>I'm a maths graduate based in the UK. Currently I am polishing my skills in front end web development (HTML and CSS) and I have also prototyped a game using C# and the Unity engine.</p>
-
+            <a href="unity.html"
+               target="_blank"
+               class="project-grid-item project-1">
                 <div>
-                    Feel free to connect with me on <a class="hyperlink" href="https://www.linkedin.com/in/d-drake-411a20262" target="_blank">LinkedIn</a>.
+                    <img class="project-image"
+                         src="images\unityWorkSpace.jpg"
+                         alt="project">
+                    <p class="project-title">Unity Game Development</p>
                 </div>
-            </section>
-            <hr />
-            <section>
-                <div class="sub-headings">
-                    <h2>Game Development</h2>
-                </div>
+            </a>
 
-                <p>I've been prototyping a 2D action adventure game using the Unity engine along with C#.</p>
-                <p>This has allowed me to explore a variety of different creative endeavours including music, art, animation, and coding. The link below will take you to a page where I discuss how I implemented features within my game as well as progress updates.</p>
-                <figure>
-                    <img src="images\unityWorkSpace.jpg" alt="Unity IDE" />
-                    <figcaption>The Unity IDE and my setup.</figcaption>
-                </figure>
-                <p>Click <a class="hyperlink" href="unity.html" target="_blank">here</a> to learn more about this project</p>
-            </section>
-            <hr />
-            <section>
-                <div class="sub-headings">
-                    <h2>Web Development</h2>
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+               id="profile-link"
+               target="_blank"
+               class="project-grid-item project-2">
+                <div>
+                    <img class="project-image"
+                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+                         alt="project">
+                    <p class="project-title">Tribute Page</p>
                 </div>
+            </a>
 
-                <p>I've made my way through freeCodeCamp's "Responsive Web Design Course Certification" and I'm looking to complete the remaining courses in the coming weeks. As I make my way through these courses I'll have a lot more projects linked in this section as well as more functionality.</p>
-                <p>This website is responsive, try resizing the window to see what happens on phones/smaller screens. Check back regularly, over the coming weeks there will be a lot more to see!</p>
-                <p>Click here to Visit my <a class="hyperlink" href="https://github.com/DrakeDevelopments" target="_blank">GitHub</a> profile</p>
-            </section>
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+               id="profile-link"
+               target="_blank"
+               class="project-grid-item project-3">
+                <div>
+                    <img class="project-image"
+                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+                         target="_blank"
+                         alt="project">
+                    <p class="project-title">Tribute Page</p>
+                </div>
+            </a>
+
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+               id="profile-link"
+               target="_blank"
+               class="project-grid-item project-4">
+                <div>
+                    <img class="project-image"
+                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+                         target="_blank"
+                         alt="project">
+                    <p class="project-title">Tribute Page</p>
+                </div>
+            </a>
+
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+               id="profile-link"
+               target="_blank"
+               class="project-grid-item project-5">
+                <div>
+                    <img class="project-image"
+                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+                         target="_blank"
+                         alt="project">
+                    <p class="project-title">Tribute Page</p>
+                </div>
+            </a>
+
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+               id="profile-link"
+               target="_blank"
+               class="project-grid-item project-6">
+                <div>
+                    <img class="project-image"
+                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+                         target="_blank"
+                         alt="project">
+                    <p class="project-title">Tribute Page</p>
+                </div>
+            </a>
+
+        </section>
+    </div>
+    <!--portfolio end-->
+    <!--contacts start-->
+    <section id="contacts" class="contacts">
+        <h2>Let's work together...</h2>
+        <p>Connect with me on:</p>
+        <div class="smedia-icons">
+            <i class="lab la-github">GitHub</i>
+            <i class="lab la-linkedin">LinkedIn</i>
+            <!--<i class="lab la-facebook">Facebook</i>
+            <i class="lab la-twitter">Twitter</i>
+            <i class="las la-at">Email</i>
+            <i class="las la-mobile">Call me</i>-->
         </div>
+    </section>
+    <!--contacts end-->
 
-        <div class="container2 panel">
-            <section>
-                <div class="sub-headings">
-                    <h2>Current Objectives</h2>
-                    <ul>
-                        <li>Working my way through freeCodeCamp. (1/10 courses complete)</li>
-                        <li>Increasing my touch typing speed.</li>
-                        <li>Add more information to my unity page on this website.</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-    </main>
+    <footer>
+        <section class="foot-flexbox-container">
+            <p>This portfolio is currently in development so some of these projects are placeholders</p>
+            <i class="las la-copyright">DrakeDevelopments</i>
+        </section>
+    </footer>
 
 </body>
 </html>
