@@ -23,7 +23,8 @@
     height: 4rem;
     top: 0;
     left: 0;
-    background-color: var(--palette1)
+    background-color: var(--palette1);
+    border-bottom: 1px solid var(--palette5);
 }
 
 .nav-flex-item {
@@ -63,7 +64,7 @@
 .about p {
     font-size: 2rem;
     font-style: italic;
-    color: var(--palette5);
+    color: var(--palette4);
     padding-top: 1rem;
 }
 /* Welcome End */
@@ -118,7 +119,7 @@
 .project-title:hover,
 .project-title:active {
     margin: 0.5rem;
-    color: #ffc49b;
+    color: var(--palette4);
     font-size: 1.5rem;
 }
 /* Projects End */
@@ -134,6 +135,17 @@
     justify-items: center;
     background-color: var(--palette1);
     color: var(--palette4);
+    text-align: center;
+}
+
+.smedia-icons a,
+.smedia-icons a:visited,
+.smedia-icons a:hover,
+.smedia-icons a:active {
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: var(--palette4);
 }
 
 .contacts h2 {
@@ -144,14 +156,26 @@
     font-size: 2rem;
     font-style: italic;
 }
-
-.smedia-icons i {
-    font-size: 2rem;
-    margin: 0 1rem;
-}
 /* Contacts End */
 
-@media only screen and (max-width: 1400px) {
+/* Footer Start */
+footer section {
+    background-color: var(--palette5);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    min-height: 5vh;
+}
+
+footer section * {
+    padding: 0 1rem;
+}
+/* Footer End */
+
+@media only screen and (min-width: 1400px) {
 
     .project-grid-container {
         padding: 0 10vw 3rem;
