@@ -25,19 +25,28 @@
     left: 0;
     background-color: var(--palette1);
     border-bottom: 1px solid var(--palette5);
+    z-index: 999;
 }
 
 .nav-flex-item {
-    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
 }
 
-.nav-flex-item li {
-    padding: 1rem 2rem;
-    display: inline;
+.nav-flex-item a:hover {
+    animation-name: highlight;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.nav-flex-item a li {
     list-style: none;
 }
 
-.nav-flex-item li a {
+.nav-flex-item a {
+    padding: 1rem;
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--palette4);
@@ -97,13 +106,17 @@
     text-align: center;
     background-color: var(--palette2);
     border: solid 2px var(--palette1);
+    max-height: 500px;
     width: 100%;
     text-decoration: none;
+    box-shadow: 0px 0px 20px var(--palette1);
 }
 
 .project-grid-item img {
-    max-width: 100%;
-    max-height: 100%;
+    max-height: calc(500px - 6rem);
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 50%;
 }
 
 .project-grid-item.project-1 {
@@ -122,6 +135,7 @@
     color: var(--palette4);
     font-size: 1.5rem;
 }
+
 /* Projects End */
 
 /* Contacts Start */
@@ -138,14 +152,32 @@
     text-align: center;
 }
 
+.smedia-icons{
+    display: flex;
+    min-height: 10rem;
+    align-items: center ;
+
+}
+
+.smedia-icons a{
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
 .smedia-icons a,
 .smedia-icons a:visited,
 .smedia-icons a:hover,
 .smedia-icons a:active {
     text-decoration: none;
-    font-size: 2rem;
-    margin: 0 1rem;
     color: var(--palette4);
+}
+
+.smedia-icons i {
+    transition: font-size 0.3s ease-out;
+}
+
+.smedia-icons i:hover {
+    font-size: 3rem;
 }
 
 .contacts h2 {
@@ -168,6 +200,7 @@ footer section {
     align-items: center;
     justify-items: center;
     min-height: 5vh;
+    border-top: 3px solid var(--palette3);
 }
 
 footer section * {
@@ -175,10 +208,26 @@ footer section * {
 }
 /* Footer End */
 
+/* Animation code start */
+@keyframes highlight {
+    0% {background-color: transparent;} 
+    30% {background-color: var(--palette4);
+        color: #001b2e;}
+    100% {background-color: var(--palette4);
+        color: #001b2e;}
+}
+
+@keyframes enlarge {
+    0% {} 
+    30% {font-size: 5rem;}
+    100% {font-size: 5rem;}
+}
+/* Animation code start */
+
 @media only screen and (min-width: 1400px) {
 
     .project-grid-container {
-        padding: 0 10vw 3rem;
+        padding: 0 25vw 3rem;
     }
 }
 
@@ -196,5 +245,19 @@ footer section * {
 
     .project-grid-item.project-6 {
         grid-column: 1 / 2;
+    }
+
+    .smedia-icons {
+        flex-direction: column;
+    }
+
+    .smedia-icons a{
+        margin: 1rem;
+    }
+
+    footer section {
+        flex-direction: column;
+        min-height: 10vh;
+        justify-content: space-evenly;
     }
 }
