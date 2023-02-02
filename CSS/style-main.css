@@ -79,7 +79,9 @@
 /* Welcome End */
 
 
-/* Projects Start */
+/*  Projects Start 
+    These are for the home page: index.html
+*/
 .project-heading {
     text-align: center;
     padding: 8rem 0;
@@ -135,7 +137,95 @@
     color: var(--palette4);
     font-size: 1.5rem;
 }
+/*This is for the actual projects that are on other pages*/
+.real-project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem 25vw 3rem;
+    font-size: 1.5rem;
+}
 
+.real-project-grid-item {
+    background-color: var(--palette2);
+    border: solid 2px var(--palette1);
+    width: 100%;
+    text-decoration: none;
+    box-shadow: 0px 0px 20px var(--palette1);
+    padding: 1rem;
+}
+
+#title{
+    text-align: center;
+    color: var(--palette4);
+}
+
+#description{
+    text-align: center;
+    color: var(--palette4);
+    margin-bottom: 1rem;
+}
+
+label,
+input,
+select {
+    display: block;
+}
+
+input,
+select,
+.radio-end{
+    margin: 0 0 2rem;
+}
+
+label,
+.survey-form p{
+    color: var(--palette4);
+}
+
+select{
+    height: 2rem;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+}
+
+input {
+    height: 2rem;
+    width: calc(100% - 0.5rem);
+    border-radius: 5px;
+    padding-left: 0.5rem;
+}
+
+#submit {
+    width: 100%;
+    height: 2.5rem;
+    background-color: var(--palette1);
+    border: solid 1px var(--palette5);
+    margin-top: 1rem;
+    color: #ffc49b;
+    font-size: 1.5rem;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+.inline {
+  display: inline ;
+  width: auto;
+  height: 1rem;
+  margin: 0;
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  border-radius: 5px;
+}
 /* Projects End */
 
 /* Contacts Start */
@@ -259,5 +349,9 @@ footer section * {
         flex-direction: column;
         min-height: 10vh;
         justify-content: space-evenly;
+    }
+
+    .real-project-container {
+        padding: 0 5vw 3rem;
     }
 }
