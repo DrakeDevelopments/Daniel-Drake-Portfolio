@@ -62,6 +62,7 @@
     height:100vh;
     text-align: center;
     justify-content: center;
+    align-items: center;
     background-color: var(--palette2);
 }
 
@@ -75,6 +76,7 @@
     font-style: italic;
     color: var(--palette4);
     padding-top: 1rem;
+    max-width: 75%;
 }
 /* Welcome End */
 
@@ -206,7 +208,7 @@ input {
     background-color: var(--palette1);
     border: solid 1px var(--palette5);
     margin-top: 1rem;
-    color: #ffc49b;
+    color: var(--palette4);
     font-size: 1.5rem;
 }
 
@@ -312,15 +314,7 @@ footer section * {
     30% {font-size: 5rem;}
     100% {font-size: 5rem;}
 }
-/* Animation code start */
-
-@media only screen and (min-width: 1400px) {
-
-    .project-grid-container {
-        padding: 0 25vw 3rem;
-    }
-}
-
+/* Animation code end */
 
 @media only screen and (max-width: 600px) {
 
@@ -353,5 +347,17 @@ footer section * {
 
     .real-project-container {
         padding: 0 5vw 3rem;
+    }
+
+    .about p {
+        max-width: 95%;
+        text-align: left;
+    }
+}
+
+/* No less than 600px, no greater than 900px */
+@media (min-width:600px) and (max-width:1200px) {
+    .real-project-container{
+        padding: 0 10vw 3rem;
     }
 }
