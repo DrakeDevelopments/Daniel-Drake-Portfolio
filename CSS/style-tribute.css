@@ -1,0 +1,71 @@
+:root{
+  --palette6: #6E0D25;
+  --palette7: #FFFFB3;
+  --palette8: #DCAB6B;
+  --palette9: #774E24;
+  --palette10: #6A381F;
+}
+
+#main{
+  background-color: var(--palette7);
+  padding: 0.5rem;
+  color: var(--palette7);
+}
+
+header {
+  text-align: center;
+  background-color: var(--palette6);
+  padding: 1rem;
+}
+
+#img-div {
+  max-width: 80%;
+  margin: 1rem auto 1rem;
+  display: block;
+  text-align: center;
+}
+
+#image {
+  max-width: 100%;
+  max-height: 300px;
+  margin: 0 0 1rem;
+  object-fit: cover;
+}
+
+#img-caption {
+  color: var(--palette6);
+}
+
+#tribute-info {
+  padding: 1rem 0 0; 
+  background-color: var(--palette6);
+}
+
+#tribute-info li{
+  margin: 1rem auto;
+  max-width: 75%;
+}
+
+#tribute-info ul {
+  padding: 0 0 1rem;
+  margin-bottom: 1rem;
+}
+
+#quote-holder{
+  border: 2px solid var(--palette6);
+}
+
+#signoff {
+  border-top: 2px solid var(--palette6);
+}
+
+#quote-holder p {
+  text-align: center;
+  background-color: var(--palette8);
+  padding: 0.7rem;
+  color: var(--palette10);
+}
+
+#quote-holder a {
+  color: var(--palette6);
+}

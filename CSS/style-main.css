@@ -293,6 +293,7 @@ footer section {
     justify-items: center;
     min-height: 5vh;
     border-top: 3px solid var(--palette3);
+    color: var(--palette1);
 }
 
 footer section * {
