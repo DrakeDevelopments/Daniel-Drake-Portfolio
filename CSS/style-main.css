@@ -139,7 +139,7 @@
     color: var(--palette4);
     font-size: 1.5rem;
 }
-/*This is for the actual projects that are on other pages*/
+    /*This is for the actual projects that are on other pages (-unity)*/
 .real-project-container {
     display: flex;
     flex-direction: column;
@@ -227,6 +227,23 @@ textarea {
   width: 100%;
   min-height: 200px;
   border-radius: 5px;
+}
+
+    /*blog style*/
+.project-para {
+    height: auto;
+    max-height: 100%;
+    grid-column: 1 / -1;
+}
+
+.left-align{
+    text-align: left;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.project-para:last-child{
+    padding: 0 0 0.5rem;
 }
 /* Projects End */
 
@@ -351,8 +368,13 @@ footer section * {
     }
 
     .about p {
-        max-width: 95%;
-        text-align: left;
+        max-width: 95%;;
+    }
+
+    .project-para {
+        height: auto;
+        max-height: auto;
+        grid-column: 1 / -1;
     }
 }
 
@@ -360,5 +382,11 @@ footer section * {
 @media (min-width:600px) and (max-width:1200px) {
     .real-project-container{
         padding: 0 10vw 3rem;
+    }
+
+    .project-para {
+        height: auto;
+        max-height: auto;
+        grid-column: 1 / -1;
     }
 }

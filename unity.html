@@ -1,83 +1,86 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style-main.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial scale=1.0" />
-    <link rel="stylesheet" href="CSS\style-main.css" />
-    <title>Daniel Drake - Game Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DD - Home</title>
 </head>
 
 <body>
-    <!--Banner Section-->
-    <div class="banner">
-        <h1>Game Development</h1>
-        <p class="banner-description">Updated at least once a week. Check back regularly!</p>
-    </div>
-
-    <!--Navigation-->
-    <nav id="navbar" class="panel">
-        <header>D D</header>
-        <a id="nav-link" class="hyperlink" href="index.html">Home</a>
-        <a id="nav-link" class="hyperlink" href="unity.html">Game Development</a>
-        <a id="nav-link" class="hyperlink" href="project1.html">Project One</a>
-        <a id="nav-link" class="hyperlink" href="project2.html">Project Two</a>
+    <!--navigation start-->
+    <nav id="navbar" class="nav-flex-container">
+        <ul class="nav-flex-item">
+            <a href="index.html">
+                <li>
+                    Home
+                </li>
+            </a>
+        </ul>
     </nav>
+    <!--navigation end-->
 
-    <!--Main content-->
-    <main>
-       
-        <div class="container1 panel">
-            <section>
-                <div class="sub-headings">
-                    <h2>About My Game</h2>
-                </div>
+    <!--about start-->
+    <section id="welcome-section" class="about">
+        <h1>Unity Game Development</h1>
+        <p>A game development project using the Unity Engine and C#</p>
+    </section>
+    <!--about end-->
 
-                <p>I've been developing a game using the Unity Engine and C# for the last year or so. Unfortunately I haven't been able to invest as much time into this project as I would have liked (work or DIY projects take up most of my time), however most of the basics are set up!</p>
-            </section>
-            <hr />
-            <section>
-                <div class="sub-headings">
-                    <h2>The Aim of the Game</h2>
-                </div>
+    <!--portfolio start-->
+    <div class="project-holder" id="projects">
+        <h2 class="project-heading">A tower of full action, adventure, and intrigue</h2>
+        <section class="project-grid-container">
 
-                <p>I don't want to give away too much of the story, but I can give away what the aims are... mechanically.</p>
-                <p>It's a 2D action adventure game, with some souls-like mechanics. You start off in a tutorial area, where you learn to run, jump, and attack. Defeating ememies rewards you with a currency that's used to purchase level-ups. There's also abilities that your can purchase to equip onto your character to give them additional powers. The equipable abilities are currently in development, however, the leveling up system is functional.</p>
-                <p>Upon completing the tutorial you gain access to a "home" area, where you can shop, level up, buy a house, and more! There are multiple areas each with their own themes, and bosses. All previous bosses must be defeated in order to challenge the final boss. At which point the end-credits roll and you can continue exploring the map and completing side quests.</p>
+            <div class="project-grid-item project-para">
+                <p class="project-title">Introduction</p>
+                <p class="left-align">
+                    A 2D action adventure game, with some souls-like mechanics. I've given it the codename of "The Tower". 
+                    The aim is to break out of the tower by overcoming numerous battles and puzzles. 
+                    You start off in a tutorial area, where you learn to run, jump, and attack. 
+                    Defeating ememies rewards you with a currency that's used to purchase level-ups. 
+                    There are also abilities that can been purchased and equipped to power you up even further! 
+                    The equipable abilities are currently in development, however, the leveling up system is functional.
+                </p>
+                <p class="left-align">
+                    Upon completing the tutorial you gain access to a "home" area, where you can shop, level up,
+                    buy a house, and more! There are multiple areas each with their own themes, bosses, and plot lines. 
+                    All previous bosses must be defeated in order to challenge the final boss. 
+                    At which point the end-credits roll and you can continue exploring the map and completing side quests.
+                </p>
+            </div>
 
-            </section>
-            <hr />
-            <section>
-                <div class="sub-headings">
-                    <h2>What Next?</h2>
-                </div>
-                <p>I'd like to add a demo or gallery here to show the features I've created so far, as well as some detailed explanations on how I did it. Hopefully this will come soon, check back weekly, as this site is constantly being updated!</p>
-            </section>
+        </section>
+    </div>
+    <!--portfolio end-->
 
+    <!--contacts start-->
+    <section id="contacts" class="contacts">
+        <h2>Let's work together...</h2>
+        <p>Connect with me on:</p>
+        <div class="smedia-icons">
+            <a href="https://github.com/DrakeDevelopments" target="_blank"><i class="lab la-github"> GitHub</i></a>
+            <a href="https://www.linkedin.com/in/daniel-drake-developer/" target="_blank"><i class="lab la-linkedin"> LinkedIn</i></a>
+            <!--
+            <a><i class="lab la-facebook">Facebook</i></a>
+            <a><i class="lab la-twitter">Twitter</i></a>
+            <a><i class="las la-at">Email</i></a>
+            <a><i class="las la-mobile">Call me</i></a>
+            -->
         </div>
+    </section>
+    <!--contacts end-->
 
-        <div class="container2 panel">
-            <section>
-                <div class="sub-headings">
-                    <h2>Mechanics Completed</h2>
-                    <ul>
-                        <li>Running and jumping</li>
-                        <li>Mellee and ranged attacks</li>
-                        <li>Boss abilities (1/6)</li>
-                        <li>Leveling System</li>
-                        <li>Dialogue System</li>
-                        <li>Music and sound system</li>
-                        <li>Async scenes (can play the game without loading screens (except when teleporting or initial start-up)</li>
-                        <li>Save and load system</li>
-                        <li>Teleporting System</li>
-                        <li>Some enemies and behaviours</li>
-                        <li>Various traps and platforms</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        
-    </main>
+    <!--footer start-->
+    <footer>
+        <section class="foot-flexbox-container">
+            <p>This portfolio is currently in development, so some of these projects are placeholders</p>
+            <i class="las la-copyright">DrakeDevelopments</i>
+        </section>
+    </footer>
+    <!--footer end-->
 
 </body>
 </html>
