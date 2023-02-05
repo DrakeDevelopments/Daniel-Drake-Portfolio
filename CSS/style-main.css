@@ -147,8 +147,8 @@
     align-content: center;
     justify-items: center;
     align-items: center;
-    padding: 1rem 25vw 3rem;
-    font-size: 1.5rem;
+    padding: 1em 25vw 3em;
+    font-size: 1.5em;
 }
 
 .real-project-grid-item {
@@ -157,7 +157,7 @@
     width: 100%;
     text-decoration: none;
     box-shadow: 0px 0px 20px var(--palette1);
-    padding: 1rem;
+    padding: 1em;
 }
 
 #title{
@@ -168,7 +168,7 @@
 #description{
     text-align: center;
     color: var(--palette4);
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 label,
@@ -180,7 +180,7 @@ select {
 input,
 select,
 .radio-end{
-    margin: 0 0 2rem;
+    margin: 0 0 2em;
 }
 
 label,
@@ -189,25 +189,25 @@ label,
 }
 
 select{
-    height: 2rem;
+    height: 2em;
     width: 100%;
     border-radius: 5px;
-    padding-left: 0.5rem;
+    padding-left: 0.5em;
 }
 
 input {
     height: 2rem;
-    width: calc(100% - 0.5rem);
+    width: calc(100% - 0.5em);
     border-radius: 5px;
-    padding-left: 0.5rem;
+    padding-left: 0.5em;
 }
 
 #submit {
     width: 100%;
-    height: 2.5rem;
+    height: 2.5em;
     background-color: var(--palette1);
     border: solid 1px var(--palette5);
-    margin-top: 1rem;
+    margin-top: 1em;
     color: var(--palette4);
     font-size: 1.5rem;
 }
@@ -219,7 +219,7 @@ input {
 .inline {
   display: inline ;
   width: auto;
-  height: 1rem;
+  height: 1em;
   margin: 0;
 }
 
@@ -238,12 +238,12 @@ textarea {
 
 .left-align{
     text-align: left;
-    padding: 0.5rem 1rem;
+    padding: 0.5em 1em;
     font-size: 1.2rem;
 }
 
 .project-para:last-child{
-    padding: 0 0 0.5rem;
+    padding: 0 0 0.5em;
 }
 /* Projects End */
 
@@ -263,14 +263,14 @@ textarea {
 
 .smedia-icons{
     display: flex;
-    min-height: 10rem;
+    min-height: 10em;
     align-items: center ;
 
 }
 
 .smedia-icons a{
     font-size: 2rem;
-    margin: 0 1rem;
+    margin: 0 1em;
 }
 
 .smedia-icons a,
@@ -338,7 +338,7 @@ footer section * {
 
     .project-grid-container {
         grid-template-columns: 1fr;
-        padding: 0 5vw 3rem;
+        padding: 0 5vw 3em;
     }
 
     .project-grid-item.project-1 {
@@ -354,7 +354,7 @@ footer section * {
     }
 
     .smedia-icons a{
-        margin: 1rem;
+        margin: 1em;
     }
 
     footer section {
@@ -364,7 +364,7 @@ footer section * {
     }
 
     .real-project-container {
-        padding: 0 5vw 3rem;
+        padding: 0 5vw 3em;
     }
 
     .about p {
@@ -381,7 +381,7 @@ footer section * {
 /* No less than 600px, no greater than 900px */
 @media (min-width:600px) and (max-width:1200px) {
     .real-project-container{
-        padding: 0 10vw 3rem;
+        padding: 0 10vw 3em;
     }
 
     .project-para {
