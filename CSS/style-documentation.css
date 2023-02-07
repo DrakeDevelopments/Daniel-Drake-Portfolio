@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 2px transparent black;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    margin-bottom: 100px;
+}
+
+#main-doc ul{
+    padding-left: 1em;
+}
+
+.main-section {
+    margin: 1em;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p,
+li {
+    margin: 0.5em 0;
+}
+
+#nav2 {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    border-right: solid 2px gray;
+    height: 100%;
+}
+
+#nav2 header {
+    text-align: center;
+    padding: 1em 1em 0.5em;
+}
+
+.nav-link {
+    display: block;
+    text-decoration-line: none;
+    border-top: solid 2px gray;
+    color: gray;
+    margin: 10px auto;
+    padding-top: 10px;
+    padding-left: 1em;
+}
+
+.code-snippets {
+    background-color: #D3D3D3;
+
+    height: auto;
+    padding: 0 1em 1em;
+    margin: 1em;
+}
+
+code {
+display: block;
+padding-top: 1em;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+
+    #nav2 {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0 0 1.5em;
+    margin: 0;
+    width: 100%;
+    max-height: 250px;
+    z-index: 1;
+    border-right: none;
+    border-bottom: 2px solid black;
+    }
+
+    #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 290px;
+    margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    
+    #main-doc {
+    margin-left: -10px;
+    }
+}
